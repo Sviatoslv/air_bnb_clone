@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 export const Inbox = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Inbox Screen</Text>
     </View>
   );
@@ -12,7 +12,6 @@ export const Inbox = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },

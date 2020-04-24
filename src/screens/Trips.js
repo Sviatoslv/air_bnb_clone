@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 export const Trips = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Trips Screen</Text>
     </View>
   );
@@ -12,7 +12,6 @@ export const Trips = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },

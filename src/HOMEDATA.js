@@ -1,4 +1,4 @@
-export const homeDATA = [
+export const HOMEDATA = [
   {
     img:
       "https://66.media.tumblr.com/2615eff892c242364b99870bd9d5a201/ca9b4ec0f4bb9af7-3b/s540x810/cf9f6cf221d629f906f06abf030acfbcb4156f80.jpg",

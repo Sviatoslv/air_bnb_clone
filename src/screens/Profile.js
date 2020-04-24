@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 export const Profile = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Profile Screen</Text>
     </View>
   );
@@ -12,7 +12,6 @@ export const Profile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },

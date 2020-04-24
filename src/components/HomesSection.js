@@ -2,14 +2,14 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { AppTittle } from "../ui/AppTittle";
 import { Home } from "./Home";
-import { homeDATA } from '../homeData';
+import { HOMEDATA } from '../HOMEDATA';
 
 export const HomesSection = () => (
   <View style={styles.container}>
     <AppTittle>Homes Around The World</AppTittle>
 
     <View style={styles.homesContainer}>
-      {homeDATA.map((home) => (
+      {HOMEDATA.map((home) => (
         <Home
           key={home.id}
           imgUri={home.img}

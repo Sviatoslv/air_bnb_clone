@@ -1,6 +1,7 @@
 import React from "react";
 import { Image } from "react-native";
 import { Ionicons } from "react-native-vector-icons";
+import { COLORS } from "../constants";
 
 export const screenOptions = ({ route }) => ({
   tabBarIcon: ({ color, size }) => {
@@ -41,7 +42,7 @@ export const screenOptions = ({ route }) => ({
 });
 
 export const tabBarOptions = {
-  activeTintColor: "tomato",
+  activeTintColor: COLORS.ACCENT,
   inactiveTintColor: "gray",
   style: {
     backgroundColor: "#fff",

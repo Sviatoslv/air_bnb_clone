@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View, Image, Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Rating } from "react-native-ratings";
+import { COLORS } from "../constants";
 
 export const Home = ({ imgUri, title, description, price }) => (
   <View style={styles.container}>
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 10,
-    color: "tomato",
+    color: COLORS.ACCENT,
     textTransform: "uppercase",
     marginBottom: 5,
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, ScrollView } from "react-native";
+import { View, ScrollView } from "react-native";
 import { AppTittle } from "../ui/AppTittle";
 import { DATA } from "../DATA";
 import { Category } from "./Category";

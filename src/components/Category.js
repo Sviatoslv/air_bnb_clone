@@ -21,12 +21,9 @@ const styles = StyleSheet.create({
     marginRight: 20,
     width: 130,
     height: 130,
-    backgroundColor: "gray",
-    borderColor: "#ddd",
   },
   image: {
     flex: 2,
-    backgroundColor: "gray",
   },
   text: {
     flex: 0.6,

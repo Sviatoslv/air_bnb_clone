@@ -1,22 +1,30 @@
 import React from "react";
-import { StyleSheet, ScrollView } from "react-native";
-import { CategorySection } from './CategorySection';
-import { PlusSection } from './PlusSection';
-import { HomesSection } from './HomesSection';
+import { StyleSheet, Animated } from "react-native";
+import { CategorySection } from "./CategorySection";
+import { PlusSection } from "./PlusSection";
+import { HomesSection } from "./HomesSection";
 
-export const ExploreContent = () => {
+export const ExploreContent = ({scrollY}) => {
   return (
-    <ScrollView style={styles.container} scrollEventThrottle={16}>
+    <Animated.ScrollView
+      style={styles.container}
+      scrollEventThrottle={16}
+      onScroll={Animated.event(
+        [{nativeEvent: {contentOffset: {y:scrollY}}}],
+        {},
+        { useNativeDriver: true },
+      )}
+    >
       <CategorySection />
       <PlusSection />
-      <HomesSection/>
-    </ScrollView>
+      <HomesSection />
+    </Animated.ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     paddingLeft: 20,
-    marginBottom: 130,
+    marginBottom: 100,
   },
 });
